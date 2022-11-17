@@ -8,7 +8,7 @@ build({
   bundle: true,
   logLevel: "info",
   outdir: "builds",
-  plugins: [sassPlugin()],
+  plugins: [sassPlugin({ cssImports: true })],
 })
   .then(() => console.log("⚡ Build complete! ⚡"))
   .catch((error) => {
